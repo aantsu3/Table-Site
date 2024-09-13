@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>卵焼き</title>
+    <link rel="stylesheet" href="css/recipes.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
+      </style>
+</head>
+<body>
+    <body>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="img/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+              <img src="img/twitter.svg" alt="Twitter Icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="img/instagram.svg" alt="Instagram Icon">
+            </a>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+           </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="" target="_blank">ABOUT</a></li>
+            </ul>
+           </nav>
+         <div class="wrapper">
+           <div class="items-col">
+            <div class="item">
+                <div class="item-body">
+                <h1>SUKIYAKi</h2>
+                <h2>家で食べると心が温まる。</h3>
+                </div>
+            </div>
+            </div>
+                <div class="item-img">
+                    <img id="mainfood" img src="img/sukiyaki.JPG" alt="">
+                    <div id="myModal" class="modal">
+                        <img class="modal-content" id="img01">
+                    </div>
+                </div>
+                <div class="items-col">
+                    <div class="item">
+                <div class="item-body">
+                <h3>材料いっぱい入ってるが、やっぱり肉が一番美味しい</h3>
+            </div>
+        </div>
+            </div>
+            <hr width="900" background color="#B68963">
+            <div class="recipe"><h2>SUKIYAKI</h2></div>
+            <section class="columns">
+                <div class="column">
+                    <p>長ネギ - 1本</p>
+                    <p>椎茸 - 適量</p>
+                    <p>白菜 - 適量</p>
+                    <p>白滝 - 150g</p>
+                    <p>焼き豆腐 - 150g</p>
+                    <p>玉ねぎ - 適量</p>
+                    <p>味醂 - 100ml</p>
+                    <p>醤油 - 100ml</p>
+                    <p>水 - 200ml</p>
+                    <p>砂糖 - 20g</p>
+                    <p>牛脂 - 5g</p>
+                    <p>牛肉 - 300g</p>
+                </div>
+                <div class="column">
+                    <p>長ネギを2.5cm斜め切る。</p>
+                    <p>椎茸の軸を取って半分に切る。</p>
+                    <p>醤油、味醂、水、砂糖を混ぜる。
+                    <p>鍋で牛脂を溶かして強火で長ネギを炒める、色付けたら、<br>椎茸と他の野菜を全部鍋に入れて蓋して中火で5分くらい煮る。</p>
+                    <p>焼き豆腐と白滝を入れて更に3-5分くらい煮る。</p>
+                    <p>出来上がり。</p>
+                </div>
+            </section>
+        </div>
+            <hr width="850">
+            <div class="footer">
+                <h3>MADE WITH ❤️</h3>
+                <img src="img/strawberry.jpg" alt="">
+                <h3>COPYRIGHT © 2023 AANTSU3</h3>
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                 
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('mainfood');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.style.height = "450px";
+                    modalImg.style.width = "600px";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+
+                }
+                 
+                 
+                // When the user clicks on <span> (x), close the modal
+                modal.onclick = function() {
+                    img01.className += " out";
+                    setTimeout(function() {
+                       modal.style.display = "none";
+                       img01.className = "modal-content";
+                     }, 400);
+                    
+                 }    
+                </script>
+        </body>
+</html>
